@@ -1221,7 +1221,7 @@ def registered_client(args, existing_account_key):
     """Create ACME client, register if necessary."""
     key = check_or_generate_account_key(args, existing_account_key)
     net = acme_client.ClientNetwork(key, user_agent=args.user_agent)
-    client = acme_client.Client(directory=args.server, key=key, net=net)
+    client = acme_client.Client(args.server, key=key, net=net)
     if args.email is None:
         logger.warning('--email was not provided; ACME CA will have no '
                        'way of contacting you.')
@@ -1327,7 +1327,7 @@ def revoke(args):
 
     key = check_or_generate_account_key(args, existing_data.account_key)
     net = acme_client.ClientNetwork(key, user_agent=args.user_agent)
-    client = acme_client.Client(directory=args.server, key=key, net=net)
+    client = acme_client.Client(args.server, key=key, net=net)
     client.revoke(existing_data.cert)
     return EXIT_REVOKE_OK
 

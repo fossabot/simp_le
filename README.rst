@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flackstein%2Fsimp_le.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flackstein%2Fsimp_le?ref=badge_shield)
+
 simp\_le
 ========
 
@@ -86,3 +88,7 @@ Freenode)`_
 
 .. |Build Status| image:: https://travis-ci.org/kuba/simp_le.svg?branch=master
    :target: https://travis-ci.org/kuba/simp_le
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flackstein%2Fsimp_le.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flackstein%2Fsimp_le?ref=badge_large)
